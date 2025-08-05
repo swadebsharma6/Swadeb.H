@@ -166,6 +166,42 @@
   border-radius: 16px;
 }
 
+/* My Target section styles */
+.target-container {
+  margin-bottom: 90px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.card {
+  max-width: 320px;
+  margin: 0 auto;
+  height: 260px;
+  border-radius: 16px;
+  background: rgba(255, 76, 30, 0.05);
+  padding: 40px;
+  display: flex;
+  line-height: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 36px;
+}
+.card-dis {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
 /* Responsive layout */
 @media screen and (max-width: 576px) {
   .banner-container,
@@ -182,6 +218,14 @@
   .skill {
     padding: 10px;
     flex-direction: column-reverse;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card {
+    padding: 10px;
   }
 }
 
@@ -200,5 +244,12 @@
   .skill {
     padding: 10px;
     gap: 10px;
+  }
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+    padding: 10px;
   }
 }
