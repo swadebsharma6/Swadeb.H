@@ -34,3 +34,19 @@
   font-weight: 800;
   line-height: 33px;
 }
+
+.banner-container {
+  background-image: url("../assest/Hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  border: 2px dotted rgb(107, 107, 107);
+  max-width: 100%;
+  padding: 30px 100px;
+}
+
+.banner-info-container {
+  max-width: 950px;
+  margin: 0 auto;
+  /* padding: 30px 200px; */
+}
