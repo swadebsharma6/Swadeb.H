@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   font-family: "Azeret Mono", monospace;
+  color: rgb(13, 19, 33);
 }
 .container {
   max-width: 1140px;
@@ -28,6 +29,31 @@
   background: rgb(13, 19, 33);
 }
 
+.btn {
+  box-sizing: border-box;
+  border: 1px solid rgb(13, 19, 33);
+  opacity: 0.7;
+  width: 120px;
+  height: 30px;
+  color: rgb(13, 19, 33);
+}
+
+.section-title {
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 37px;
+}
+.section-dis {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+/* Header styles are here */
+
+.header {
+  margin-bottom: 90px;
+}
 .nav-container {
   display: flex;
   align-items: center;
@@ -69,18 +95,79 @@
   line-height: 26px;
   margin: 30px 0;
 }
+/* Web Dev container styles */
+.web-dev-container {
+  border-radius: 16px;
+  background-color: rgba(13, 19, 33, 0.02);
+}
+
+.web-container {
+  max-width: 940px;
+  min-height: 600px;
+  margin: 0 auto 90px;
+  padding: 70px 80px;
+}
+
+.section-info {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 16px;
+  background: linear-gradient(
+    90deg,
+    rgb(255, 255, 255),
+    rgba(255, 255, 255, 0) 100%
+  );
+  gap: 48px;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.skill .skill-img img {
+  width: 100%;
+}
+
+.skill-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.skill-dis {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 10px 0;
+}
 
 /* Responsive layout */
 @media screen and (max-width: 576px) {
   .banner-container,
-  .nav-container {
+  .nav-container,
+  .web-container {
     padding: 10px;
+  }
+
+  .skill {
+    padding: 10px;
+    flex-direction: column-reverse;
   }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
   .banner-container,
-  .nav-container {
+  .nav-container,
+  .web-container {
     padding: 10px;
+  }
+
+  .skill {
+    padding: 10px;
+    gap: 10px;
   }
 }
