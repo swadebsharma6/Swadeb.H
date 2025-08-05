@@ -22,6 +22,12 @@
   line-height: 23px;
 }
 
+.btn-secondary {
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  background: rgb(13, 19, 33);
+}
+
 .nav-container {
   display: flex;
   align-items: center;
@@ -48,5 +54,33 @@
 .banner-info-container {
   max-width: 950px;
   margin: 0 auto;
-  /* padding: 30px 200px; */
+}
+
+.banner-title {
+  color: rgb(13, 19, 33);
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 50px;
+}
+.banner-dis {
+  color: rgb(13, 19, 33);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 30px 0;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 576px) {
+  .banner-container,
+  .nav-container {
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .banner-container,
+  .nav-container {
+    padding: 10px;
+  }
 }
