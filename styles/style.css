@@ -203,6 +203,9 @@
 }
 
 /* Next styles */
+.next-target-container {
+  margin-bottom: 60px;
+}
 .next-skill-card {
   box-sizing: border-box;
   border: 1px solid rgba(13, 19, 33, 0.15);
@@ -231,6 +234,49 @@
   line-height: 26px;
 }
 
+.support-container {
+  max-width: 1150px;
+  min-height: 313px;
+  margin: 0 auto 50px;
+  background-image: url("../assest/handshake.jpg");
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2),
+    url(Email);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.support-container .support-title,
+.support-dis {
+  color: white;
+}
+
+.support-container input {
+  padding: 10px 25px;
+  border-radius: 10px;
+}
+
+/* Footer styles */
+.footer {
+  border-radius: 16px;
+  background: rgba(13, 19, 33, 0.03);
+}
+
+.footer-container {
+  max-width: 992px;
+  min-height: 80px;
+  padding: 15px 30px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-container img {
+  width: 30px;
+}
+
 /* Responsive layout */
 @media screen and (max-width: 576px) {
   .banner-container,
@@ -238,10 +284,17 @@
   .web-container {
     padding: 10px;
   }
+  .primary-btn {
+    width: 100%;
+  }
 
   .next-skill-card {
     padding: 10px;
     margin: 10px;
+    flex-direction: column;
+  }
+
+  .footer-container {
     flex-direction: column;
   }
 
@@ -261,6 +314,10 @@
 
   .card {
     padding: 10px;
+  }
+
+  .support-container {
+    margin: 10px;
   }
 }
 
@@ -290,5 +347,8 @@
 
   .card {
     padding: 10px;
+  }
+  .support-container {
+    margin: 10px;
   }
 }
